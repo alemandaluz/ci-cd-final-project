@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v4
       - name: Install dependencies
         run: |
           echo "Versión ORIGINAL de pip:"
